@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Text Example</title>
+  <style>
+  #myButton{
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+  }
+  
+  
+  </style>
+</head>
+<body>
+  <button id="myButton">Click me</button>
+  <p id="myParagraph">This is a paragraph.</p>
+
+  <script>
+    
+    var button = document.getElementById("myButton");
+    var paragraph = document.getElementById("myParagraph");
+
+    button.addEventListener("click", function() {
+      paragraph.textContent = "Hello, World!";
+    });
+  </script>
+</body>
+</html>
